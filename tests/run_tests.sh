@@ -22,6 +22,7 @@ export DEP_TRIAGE_OFFLINE=1
 # --- the shared script is identical in both skills
 expect 0 "" "dep_triage.py is identical in both skills" -- cmp "$T" "$SK/composer-cve-triage/scripts/dep_triage.py"
 expect 0 "" "dep_triage.py compiles" -- python3 -m py_compile "$T"
+expect 0 "" "dep_triage.py uses only Python 3.8 syntax" -- python3 -c "import ast,sys; ast.parse(open(sys.argv[1]).read(), feature_version=(3, 8))" "$T"
 for s in "$SK"/*/scripts/*.sh; do expect 0 "" "bash -n $(basename "$s")" -- bash -n "$s"; done
 
 # --- npm audit
