@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "id": "GHSA-gxpj-cx7g-858c",
+      "package": "debug",
+      "reason": "dev-only test runner dependency; debug output is never enabled in CI or production",
+      "owner": "platform-team",
+      "expires": "2027-01-31"
+    }
+  ]
+}

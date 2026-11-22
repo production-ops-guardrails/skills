@@ -1,0 +1,1 @@
+{ "entries": [ { "id": "GHSA-gxpj-cx7g-858c", "reason": "ok", "expires": "2026-12-31" }, { "id": "CVE-0000-0000", "reason": "stale entry that should be removed later", "expires": "2026-12-31" } ] }

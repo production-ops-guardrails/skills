@@ -1,0 +1,1 @@
+{ "entries": [ { "id": "GHSA-gxpj-cx7g-858c", "package": "debug", "reason": "dev-only dependency, never shipped", "expires": "2026-10-01" } ] }
